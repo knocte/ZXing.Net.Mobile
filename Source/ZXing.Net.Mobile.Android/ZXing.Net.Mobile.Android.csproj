@@ -69,17 +69,17 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\ZXing.Net.Mobile.Core\ZXing.Net.Mobile.Core.csproj">
-      <Project>{7528DD0A-1781-47F4-ADBF-EEDDB011F6BB}</Project>
-      <Name>ZXing.Net.Mobile.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ZXing.Net\Source\lib\zxing.portable.csproj">
-      <Project>{24b441f2-cbe9-4405-9fd0-72ebcbea0ec3}</Project>
-      <Name>zxing.portable</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Xamarin.Android.Support.v4" Version="23.3.0" />
     <PackageReference Include="FastAndroidCamera" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\NetStandard\ZXing.Net.Mobile.Core.ns\ZXing.Net.Mobile.Core.ns.csproj">
+      <Project>{6A56072C-34F2-4134-AD74-CC4FB5D15D89}</Project>
+      <Name>ZXing.Net.Mobile.Core.ns</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetStandard\zxing.portable.ns\zxing.portable.ns.csproj">
+      <Project>{E502906B-4AEA-4D39-BA7B-3F33918DCE65}</Project>
+      <Name>zxing.portable.ns</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
